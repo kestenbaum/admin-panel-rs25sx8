@@ -16,3 +16,24 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #161b22;
+  height: 100vh;
+  z-index: 100;
+  transition: .3s;
+}
+
+.active {
+  right: -240px;
+  transition: .3s;
+}
