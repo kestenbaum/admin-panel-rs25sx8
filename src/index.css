@@ -39,6 +39,19 @@
   transition: .3s;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 @media screen and (max-width: 450px) {
   .sidebar {
     align-items: center;
