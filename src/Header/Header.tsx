@@ -1,14 +1,16 @@
 import styles from './Header.module.css';
-import { GiHamburgerMenu } from "react-icons/gi";
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className="container">
-          <div className={styles.wrapper}>
-              <span className={styles.logo}>Logo</span>
-              <span className={styles.logo}><GiHamburgerMenu /></span>
-          </div>
+      <div className='container'>
+        <div className={styles.wrapper}>
+          <span className={styles.logo}>Logo</span>
+          <span className={styles.logo}>
+            <GiHamburgerMenu />
+          </span>
+        </div>
       </div>
     </header>
   );
