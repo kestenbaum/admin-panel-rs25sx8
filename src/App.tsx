@@ -1,6 +1,9 @@
+import Header from './Header/Header.tsx';
 
-function App() {
-  return <></>;
+export function App() {
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
-
-export default App;
