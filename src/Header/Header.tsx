@@ -1,4 +1,5 @@
 import styles from './Header.module.css';
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
   return (
@@ -6,7 +7,7 @@ const Header = () => {
       <div className="container">
           <div className={styles.wrapper}>
               <span className={styles.logo}>Logo</span>
-              <span className={styles.logo}>Menu</span>
+              <span className={styles.logo}><GiHamburgerMenu /></span>
           </div>
       </div>
     </header>
