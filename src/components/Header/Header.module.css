@@ -19,3 +19,9 @@
   color: white;
   cursor: pointer;
 }
+
+.menu {
+  color: white;
+  cursor: pointer;
+  z-index: 999;
+}
