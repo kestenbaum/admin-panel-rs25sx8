@@ -4,6 +4,7 @@ import UpdateForm from "../../components/Forms/UpdateForm.tsx";
 import styles from './Layout.module.css';
 import {useQuery} from "react-query";
 import {getItems} from "../../api/request/items.ts";
+import Loader from "../../components/UI/Loader/Loader.tsx";
 
 const Layout = () => {
   const {data, isLoading} = useQuery({
@@ -21,7 +22,7 @@ const Layout = () => {
               ?
               data?.data.map(item => <Item key={item._id} title={item.title}/>)
             :
-            <div>Loader</div>
+            <Loader/>
           }
         </div>
       </div>
