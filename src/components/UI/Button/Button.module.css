@@ -1,17 +1,17 @@
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 200px;
-    padding: 6px;
-    background: #0d1117;
-    border-radius: 6px;
-    border: 2px solid #30363d;
-    transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
-    color: #ffffff;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  padding: 6px;
+  background: #0d1117;
+  border-radius: 6px;
+  border: 2px solid #30363d;
+  transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .btn:hover {
-    background: #30363d;
+  background: #30363d;
 }
