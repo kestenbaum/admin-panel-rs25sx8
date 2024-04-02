@@ -8,7 +8,7 @@ interface SidebarProps {
 
 const Sidebar:FC<SidebarProps> = ({active, setActive}) => {
     return (
-        <div className={active ? "sidebar" : "sidebar active"}>
+        <div className={!active ? "sidebar" : "sidebar active"}>
             <Button onClick={() => setActive(false)}>Create</Button>
             <Button onClick={() => setActive(false)}>LogOut</Button>
         </div>

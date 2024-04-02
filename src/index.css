@@ -31,9 +31,17 @@
   height: 100vh;
   z-index: 100;
   transition: .3s;
+  transform: translateX(100%);
 }
 
 .active {
-  right: -240px;
+  transform: translateX(0);
   transition: .3s;
+}
+
+@media screen and (max-width: 450px) {
+  .sidebar {
+    align-items: center;
+    width: 100%;
+  }
 }
