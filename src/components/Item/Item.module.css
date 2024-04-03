@@ -12,3 +12,10 @@
   font-size: 18px;
   color: #ffffff;
 }
+
+@media screen and (max-width: 660px) {
+  .wrapper {
+    gap: 20px;
+    flex-direction: column;
+  }
+}
