@@ -22,7 +22,8 @@
   },
   "include": [
     "src",
-    "@types/api.d.ts"
+    "@types/api.d.ts",
+    "@types/index.d.ts"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
