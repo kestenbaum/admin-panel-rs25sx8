@@ -1,15 +1,11 @@
-import React from "react";
-import { QueryClient, QueryClientProvider } from 'react-query'
-
+import React from 'react';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 interface ProviderProps {
-    children: React.ReactNode
+  children: React.ReactNode;
 }
 
-
-export const queryClient = new QueryClient()
+export const queryClient: QueryClient = new QueryClient();
 export function Provider({ children }: ProviderProps) {
-    return (
-        <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
-    )
+  return <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>;
 }
