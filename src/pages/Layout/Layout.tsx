@@ -9,17 +9,13 @@ const Layout = () => {
     queryKey: ['items'],
     queryFn: () => getItems().then((responce) => responce.data)
   });
-
+  const getDataItems = data?.data.map((item) => (
+    <Item key={item._id} title={item.title} link={item.link} />
+  ));
   return (
     <section className={styles.wrapper}>
       <div className='container'>
-        <div className={styles.items}>
-          {!isLoading ? (
-            data?.data.map((item) => <Item key={item._id} title={item.title} link={item.link} />)
-          ) : (
-            <Loader />
-          )}
-        </div>
+        <div className={styles.items}>{!isLoading ? getDataItems : <Loader />}</div>
       </div>
     </section>
   );
